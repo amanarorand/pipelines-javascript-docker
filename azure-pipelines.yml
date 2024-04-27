@@ -11,7 +11,7 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '6452b881-4c22-414b-8813-79331c635482'
+  dockerRegistryServiceConnection: 'helmacr-1198'
   imageRepository: 'amanarorandpipelinesjavascriptdocker'
   containerRegistry: 'helmacr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
