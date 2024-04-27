@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: amanarorandpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: amanarorandpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: amanarorandpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: amanarorandpipelinesjavascriptdocker 
+          image: helmacr.azurecr.io/amanarorandpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
